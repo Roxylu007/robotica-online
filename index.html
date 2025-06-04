@@ -1,17 +1,145 @@
-
 <!DOCTYPE html>
-<html>
-
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Robótica Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <title>Cursos de Robótica</title>
+  <style>
+  .float {
+    animation: flotar 3s ease-in-out infinite;
+  }
+
+  @keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+    .nav-link {
+      color: rgb(227, 236, 238);
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: rgba(0, 183, 255, 0.904);
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      font-family: 'Cabin Sketch', sans-serif;
+      font-size: 42px;
+      background: #0b3d91;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url() no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px black;
+    }
+    .courses {
+      max-width: 1000px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .course-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .course-card h3 {
+      margin-top: 0;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-
-
 <body>
-  <h1 style= "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-shadow: 0 0 5px #f32cc0, 0 0 10px #f32c0c, 0 0 15px #f32c0c;">"¡Bienvenido a mi curso de robótica!"</h1>
 
+<header>
+  <h1 style="font-family: 'Cabin Sketch', sans-serif; color: #eceef0; text-shadow: 0 0 8px #74c6f5, 0 0 16px #18a5f5;">Robótic Club </h1>
+  <nav>
+    <a href="#" class="nav-link">Inicio</a>
+    <a href="#" class="nav-link">Cursos</a>
+    <a href="#" class="nav-link">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+ <div>Aprende y diviertete aprendiendo robótica desde casa 
+        con arduino, construye lo que te imagines.
+         </div>
+<img src="img\images.jpg" alt="Arduino" class="float" height="200"; >
+</section>
+
+<section class="courses">
+  <div class="course-card">
+    <h3>Robótica para principiantes</h3>
+    <p>Aprende los fundamentos de la robótica con ejercicios prácticos.</p>
+  </div>
+  <div class="course-card">
+    <h3>Arduino y sensores</h3>
+    <p>Explora cómo controlar dispositivos con Arduino y sensores.</p>
+  </div>
+  <div class="course-card">
+    <h3>Proyectos avanzados</h3>
+    <p>Crea robots móviles, brazos mecánicos y más.</p>
+  </div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="tucorreo@paypal.com">
+    <input type="hidden" name="item_name" value="Curso Robótica para principiantes">
+    <input type="hidden" name="amount" value="49.99">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Pagar con PayPal" style="background:#ffc439; padding: 10px 20px; border:none; border-radius: 5px; cursor: pointer;">
+  </form>
+
+  <!-- Botón Mercado Pago -->
+  <a href="https://mpago.la/tu-link" target="_blank" style="display:inline-block; background:#009ee3; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; margin-top:10px;">
+    Pagar con Mercado Pago
+  </a>
+  
+
+
+</section>
+
+<footer>
+  &copy; 2025 Cursos de Robótica. Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
