@@ -52,7 +52,9 @@
       font-weight: bold;
     }
     .hero {
+      font-family: 'Cabin Sketch', sans-serif;
       background: url() no-repeat center center;
+      background-image: url('img/arduino1.jpg');
       background-size: cover;
       height: 300px;
       display: flex;
@@ -62,7 +64,15 @@
       font-size: 2rem;
       text-shadow: 2px 2px 5px black;
     }
+
+    .courses-bg {
+  background-color: #0b3d91;
+  padding: 2rem 0;
+}
     .courses {
+       width: 100%;
+       background-color: #0b3d91;
+      font-family: 'Silkscreen', sans-serif;
       max-width: 1000px;
       margin: 2rem auto;
       display: grid;
@@ -70,7 +80,7 @@
       gap: 1.5rem;
     }
     .course-card {
-      background: white;
+      background-color: rgba(255, 255, 255, 0.9);;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 1rem;
@@ -103,12 +113,13 @@
  <div>Aprende y diviertete aprendiendo robótica desde casa 
         con arduino, construye lo que te imagines.
          </div>
-<img src="img\images.jpg" alt="Arduino" class="float" height="200"; >
+
 </section>
 
-<section class="courses">
+<section  class="courses-bg">
+<section  class="courses">
   <div class="course-card">
-    <h3>Robótica para principiantes</h3>
+    <h3 >Robótica para principiantes</h3>
     <p>Aprende los fundamentos de la robótica con ejercicios prácticos.</p>
   </div>
   <div class="course-card">
@@ -116,9 +127,11 @@
     <p>Explora cómo controlar dispositivos con Arduino y sensores.</p>
   </div>
   <div class="course-card">
-    <h3>Proyectos avanzados</h3>
-    <p>Crea robots móviles, brazos mecánicos y más.</p>
+    <h3>Electrónica básica</h3>
+    <p>Aprende lo básico en electronica para conectar tu arduino</p>
   </div>
+  </section>
+
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
     <input type="hidden" name="cmd" value="_xclick">
     <input type="hidden" name="business" value="tucorreo@paypal.com">
@@ -132,10 +145,10 @@
   <a href="https://mpago.la/tu-link" target="_blank" style="display:inline-block; background:#009ee3; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; margin-top:10px;">
     Pagar con Mercado Pago
   </a>
-  
+</section> 
 
 
-</section>
+
 
 <footer>
   &copy; 2025 Cursos de Robótica. Todos los derechos reservados.
